@@ -122,7 +122,7 @@ def run_assistant(user_text: str, history: list[dict[str, str]]) -> tuple[list[d
     return new_history, image_path, audio_path
 
 with gr.Blocks(title="STT + Tools + TTS Agent") as ui:
-    gr.Markdown("## 🎤 STT + 🔧 Tools + 🗣 TTS + 🖼 Görsel — Demo")
+    gr.Markdown( STT +  Tools +  TTS +  Görsel — Demo")
     with gr.Row():
         chatbot = gr.Chatbot(height=480, type="messages", label="Sohbet")
         image_out = gr.Image(height=480, label="Üretilen Görsel (opsiyonel)")
